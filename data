@@ -1,0 +1,34 @@
+// data
+{ Restaurants: [name: 'Drake', 
+breweries: [ 'Hoyne', 'Phillips', 'Category 12', 'Spinnakers', 'Moon Under Water' ], 
+coordinates:'' },
+{ name: 'Churchill', 
+breweries: [ 'Hoyne', 'Category 12', 'Moon Under Water' ] , 
+coordinates:'' },
+{ name: 'Garricks Head', 
+breweries: [ 'Phillips', 'Category 12', ], 
+coordinates:''},
+{ name: 'Irish Times', 
+breweries: [ 'Phillips'] 
+coordinates:''}
+])
+
+// front end
+{#Map}
+<tr>
+  <td colspan="2">{$name} "carries:"</td>
+  <td>{$breweries}</td>
+</tr>
+
+// template
+{#ToggleBreweries}
+<table>
+  <-- Fancy thead here -->
+  {{each(i, resto) Restaurant}}
+    {{if $resto.ItemType === '[userselection]]'}}
+      {{render('Map', resto)}}
+    {{else}}
+      do nothing
+    {{/if}}
+  {{/each}}
+</table>
