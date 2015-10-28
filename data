@@ -25,7 +25,7 @@ coordinates:''}
 <table>
   <-- Fancy thead here -->
   {{each(i, resto) Restaurant}}
-    {{if $resto.ItemType === '$userselection]'}}
+    {{if $resto.ItemType === '$userselection'}}
       {{render('Map', resto)}}
     {{else}}
       do nothing
