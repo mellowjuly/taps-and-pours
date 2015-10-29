@@ -10,7 +10,7 @@ breweries: [ 'Phillips', 'Category 12', ],
 coordinates:'48.4255563713968, -123.368125887101'},
 { name: 'Irish Times', 
 breweries: [ 'Phillips'] 
-coordinates:''}
+coordinates:'48.4258130939735, -123.3680679692'}
 ])
 
 // front end
