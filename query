@@ -28,8 +28,24 @@
  </head>
  
  <body>
+ 
+ <div class="nav-wrapper">
+		<nav class="nav-menu">
+			<ul class="clearfix">
+				<li> <a href="#!">Breweries</a></li>
+				<ul class="sub-menu">
+					<li> <a id="Category-12" href="#" data-choice='Category-12'>Category 12</a> </li>
+					<li> <a id="Hoyne" href="#!" data-choice='Hoyne'>Hoyne </a></li>
+					<li> <a id="Vancouver-Island" href="#!" data-choice='Vancouver-Island'>Vancouver Island </a></li>
+					<li> <a id="Driftwood" href="#!" data-choice='Driftwood'>Driftwood </a></li>
+				</ul>
+			</ul>
+		<nav>
+	<div>
+	
+	<script> $("#Category-12").on("click", function() { loadPins($(this).data("choice")) }) </script>
+	
     <div id="map"></div>
-
   <script>
   var map;
   var iconNightlife = 'https://foursquare.com/img/categories/nightlife/default.png';
@@ -80,7 +96,7 @@
       });
 //plotting beer
    (function() {
-  var imbibe = "url of data here";
+  var imbibe = "./data";
   $.getJSON( imbibe, {
     name: "The Drake",
     coordinate: "0 0",
