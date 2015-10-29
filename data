@@ -1,7 +1,7 @@
 // data
 { Restaurants: [name: 'Drake', 
 breweries: [ 'Hoyne', 'Phillips', 'Category 12', 'Spinnakers', 'Moon Under Water' ], 
-coordinates:'' },
+coordinates:'48.4280838370059, -123.368818023075' },
 { name: 'Churchill', 
 breweries: [ 'Hoyne', 'Category 12', 'Moon Under Water' ] , 
 coordinates:'' },
