@@ -4,10 +4,10 @@ breweries: [ 'Hoyne', 'Phillips', 'Category 12', 'Spinnakers', 'Moon Under Water
 coordinates:'48.4280838370059, -123.368818023075' },
 { name: 'Churchill', 
 breweries: [ 'Hoyne', 'Category 12', 'Moon Under Water' ] , 
-coordinates:'' },
+coordinates:'48.4255563713968, -123.368125887101' },
 { name: 'Garricks Head', 
 breweries: [ 'Phillips', 'Category 12', ], 
-coordinates:''},
+coordinates:'48.4255563713968, -123.368125887101'},
 { name: 'Irish Times', 
 breweries: [ 'Phillips'] 
 coordinates:''}
