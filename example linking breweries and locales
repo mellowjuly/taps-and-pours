@@ -1,0 +1,21 @@
+<script>
+var brewdata = 
+'{"breweries": [ {"name":"Hoyne","rests":["Drake","Churchill"]},{"name":"Phillips", "rests":["Churchill"]} ]}';
+
+var restaurantdata =
+'{"restaurants": [{"name":"Drake", "coord" : { "lat": 48.4280838370059, "long": -123.368818023075}}, {"name":"Churchill", "coord" : { "lat": 48.4255563713968, "long": -123.368125887101}} ]}';
+
+
+/// you can play around by doing your link step in something that looks like this
+
+var myBrews = JSON.parse(brewdata);
+var myRests = JSON.parse(restaurantdata);
+
+
+function myFunction() {  
+  alert("Watch this! " + myBrews.breweries[0].name + "is at " + myBrews.breweries[0].rests[0] 
+   + " located " + myRests.restaurants[0].coord.lat);
+}
+</script>
+
+<p onclick="myFunction()"><a href="#!">Try it!</a></p>
